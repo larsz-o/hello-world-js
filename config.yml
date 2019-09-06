@@ -1,0 +1,17 @@
+title: hello-world-js
+tagline: A brand new course on Learning Lab
+description: Learn how to say hello to the world in JavaScript
+template:
+  repo: hello-world-js-template
+  name: hello-world-js
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
